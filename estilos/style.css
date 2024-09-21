@@ -5,3 +5,66 @@
     verde: #49a09d
     lilás: #5f2c82
 */
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,html {
+    width: 98vw;
+    height: 98vh;
+    background-color: #5f2c82;
+}
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -55% );
+
+    border-radius: 15px;
+
+    margin: auto;
+    margin-top: 10px;
+    width: 415px;
+    height: 70vh;
+    
+   
+    background-color: white;
+}
+
+img {
+    width: 415px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+
+    margin-bottom: 10px;
+}
+
+p {
+    text-indent: 10px;
+}
+
+input, label{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 5px;
+
+}
+
+#femail, #fsenha {
+    background-color: #5f2c82;
+    width: 232px;
+    border-radius: 5px;
+    
+}
+input > value {
+    background-color: #49a09d;
+}
