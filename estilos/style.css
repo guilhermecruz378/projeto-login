@@ -7,6 +7,7 @@
 */
 :root {
     --lilas: #5f2c82;
+    --verde: #49a09d;
 }
 
 * {
@@ -41,6 +42,10 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.622);
+
+    transition: width 0.3s, height 0.3s; /*Essa função vai fazer ele ter uma animação na hora da transição de tela, quando muda o tamanho da tela*/
+
+    transition-timing-function: ease; /*essa função faz ele dar uma suavizada a animação*/
 }
 
 section#login > div#imagem {

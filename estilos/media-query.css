@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+    paleta de cores:
+    verde: #49a09d
+    lilás: #5f2c82
+*/
+:root {
+    --lilas: #5f2c82;
+    --verde: #49a09d;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
+    section#login {
+        width: 80vw;
+    }
+
+    section#login > div#imagem {
+        float: left; /*a função float vai fazer o elemento flutuar em determinado lado. podendo deslocar o container a direita(right) a esquerda(left) ou não deslocar(none)*/
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
+    section#login {
+        width: 950px;
+    }
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+}
