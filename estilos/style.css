@@ -34,7 +34,7 @@ section#login {
     position: absolute;
     top: 10%;
     left: 50%;
-    transform: translate(-50%, 10%);
+    
     overflow: hidden;
 
     background-color: white;
@@ -42,6 +42,8 @@ section#login {
     height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.622);
+
+    transform: translate(-50%, 10%);
 
     transition: width 0.3s, height 0.3s; /*Essa função vai fazer ele ter uma animação na hora da transição de tela, quando muda o tamanho da tela*/
 
@@ -71,15 +73,41 @@ div#formulario > p {
 
 form > div.campo {
     background-color: var(--lilas);
+    border: 2px solid var(--lilas);
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
 display: none;
+}
+
+div.campo > span {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width:calc(100% - 44px);
+    
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px); /*Todas transformações que você tem pra fazer use-a como ultima linha do seu seletor*/
+}
+
+div.campo > input:focus-within { /*a caixa que esta com o foco muda de cor*/
+    background-color: white;
+    border: white;
 }
 
 form > input[type=submit] {
